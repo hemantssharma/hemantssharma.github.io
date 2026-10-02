@@ -1,226 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hemant Sharma — Senior DevOps Engineer portfolio. Cloud, Kubernetes, Platform Engineering, Infrastructure Automation and Observability." />
-  <title>Hemant Sharma | Senior DevOps Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Hemant Sharma — Senior DevOps Engineer specializing in Kubernetes, cloud platforms, automation, GitOps, observability and platform engineering.">
+<meta name="theme-color" content="#070b12"><title>Hemant Sharma | Senior DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="grid-bg"></div>
-  <div class="cursor-glow"></div>
-
-  <header class="nav">
-    <a class="brand" href="#home"><span>H</span> HEMANT.SHARMA</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#stack">Stack</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
-  </header>
-
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><i></i> SENIOR DEVOPS ENGINEER</div>
-        <h1>Building<br /><span>reliable</span><br />cloud platforms.</h1>
-        <p class="hero-text">
-          Cloud & Kubernetes engineer focused on platform automation, infrastructure reliability,
-          GitOps, observability and secure enterprise operations across AWS, Azure, GCP and on-prem environments.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">Explore my work <span>↓</span></a>
-          <a class="btn ghost" href="Hemant-Sharma-Resume.pdf" download>Download resume <span>↓</span></a>
-        </div>
-        <div class="hero-meta">
-          <div><strong>4.5+</strong><span>Years experience</span></div>
-          <div><strong>3</strong><span>Cloud platforms</span></div>
-          <div><strong>∞</strong><span>Automation mindset</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal">
-        <div class="orb"></div>
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="node n1">AWS</div>
-        <div class="node n2">AZURE</div>
-        <div class="node n3">K8S</div>
-        <div class="node n4">TF</div>
-        <div class="node n5">ARGO</div>
-        <div class="terminal">
-          <div class="terminal-top"><span></span><span></span><span></span><b>platform@hemant:~</b></div>
-          <div class="terminal-body">
-            <p><em>$</em> kubectl get clusters</p>
-            <p class="muted">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STATUS</p>
-            <p>rke2-prod&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>● Ready</strong></p>
-            <p>aks-platform&nbsp;&nbsp;&nbsp; <strong>● Ready</strong></p>
-            <p>gitops-prod&nbsp;&nbsp;&nbsp;&nbsp; <strong>● Synced</strong></p>
-            <p><em>$</em> terraform apply</p>
-            <p class="green">Infrastructure is reproducible.</p>
-            <p><span class="blink">█</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="section-head reveal"><span>01</span><h2>About me</h2></div>
-      <div class="about-grid">
-        <div class="big-copy reveal">
-          <p>I turn infrastructure into <span>repeatable systems</span>.</p>
-          <p class="sub">
-            Senior DevOps Engineer with 4.5+ years of experience across HCL Technologies and FORVIA HELLA,
-            working across cloud infrastructure, Kubernetes platforms, DevOps automation, security and enterprise IT execution.
-          </p>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">⌁</div>
-          <h3>Platform mindset</h3>
-          <p>From cluster lifecycle and GitOps to monitoring, security and production troubleshooting.</p>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">◈</div>
-          <h3>Automation first</h3>
-          <p>Terraform, CI/CD, scripting and standardized provisioning to reduce repetitive operations.</p>
-        </div>
-        <div class="fact-card reveal">
-          <div class="fact-icon">◎</div>
-          <h3>Reliability focused</h3>
-          <p>Production troubleshooting, HA workloads, observability and proactive infrastructure operations.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="stack" class="section">
-      <div class="section-head reveal"><span>02</span><h2>Engineering stack</h2></div>
-      <div class="stack-grid">
-        <div class="stack-card reveal"><small>CLOUD</small><h3>AWS</h3><p>Control Tower · Lambda · CloudWatch · IAM · Landing Zones</p></div>
-        <div class="stack-card reveal"><small>CLOUD</small><h3>AZURE</h3><p>AKS · Azure DevOps · Azure OpenAI · Enterprise automation</p></div>
-        <div class="stack-card reveal"><small>CONTAINERS</small><h3>KUBERNETES</h3><p>RKE2 · AKS · Rancher · RBAC · Ingress · PVC · StatefulSets</p></div>
-        <div class="stack-card reveal"><small>GITOPS</small><h3>ARGO CD</h3><p>Application delivery · Helm · GitOps workflows · Cluster deployments</p></div>
-        <div class="stack-card reveal"><small>IaC</small><h3>TERRAFORM</h3><p>Reusable infrastructure · standardized provisioning · automation</p></div>
-        <div class="stack-card reveal"><small>OBSERVABILITY</small><h3>PROMETHEUS</h3><p>Grafana · Jaeger · Kubernetes Audit Logs · system visibility</p></div>
-        <div class="stack-card reveal"><small>SECURITY</small><h3>FALCO / NEUVECTOR</h3><p>Runtime security · intrusion detection · vulnerability management</p></div>
-        <div class="stack-card reveal"><small>CONTAINERS</small><h3>DOCKER / HARBOR</h3><p>Image lifecycle · private registries · secure container workflows</p></div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-head reveal"><span>03</span><h2>Selected work</h2></div>
-      <div class="projects">
-        <article class="project reveal">
-          <div class="project-num">01</div><div class="project-tag">KUBERNETES · PLATFORM</div>
-          <h3>Enterprise Kubernetes Platform</h3>
-          <p>Managed multi-cluster Kubernetes operations using Rancher and RKE2, including lifecycle management, RBAC, networking, storage, workloads and production troubleshooting.</p>
-          <div class="chips"><b>Rancher</b><b>RKE2</b><b>Kubernetes</b><b>RBAC</b></div>
-        </article>
-        <article class="project reveal">
-          <div class="project-num">02</div><div class="project-tag">AZURE · IaC · CI/CD</div>
-          <h3>Automated AKS Platform</h3>
-          <p>Architected and automated end-to-end AKS cluster deployment using Terraform and Azure DevOps CI/CD pipelines for standardized infrastructure provisioning.</p>
-          <div class="chips"><b>AKS</b><b>Terraform</b><b>Azure DevOps</b></div>
-        </article>
-        <article class="project reveal">
-          <div class="project-num">03</div><div class="project-tag">OBSERVABILITY · SECURITY</div>
-          <h3>Kubernetes Observability & Security</h3>
-          <p>Implemented monitoring, logging and security capabilities across Kubernetes using Prometheus, Grafana, Jaeger, Audit Logs, NeuVector and Falco.</p>
-          <div class="chips"><b>Prometheus</b><b>Grafana</b><b>Jaeger</b><b>Falco</b></div>
-        </article>
-        <article class="project reveal">
-          <div class="project-num">04</div><div class="project-tag">AI · KUBERNETES</div>
-          <h3>Kubernetes AI Platform</h3>
-          <p>Configured enterprise AI platform initiatives using Kagent with Azure OpenAI integration, including deployment and production troubleshooting.</p>
-          <div class="chips"><b>Kagent</b><b>Azure OpenAI</b><b>Kubernetes</b></div>
-        </article>
-        <article class="project reveal">
-          <div class="project-num">05</div><div class="project-tag">GPU · AI/ML</div>
-          <h3>GPU Time-Slicing on Kubernetes</h3>
-          <p>Configured NVIDIA GPU Operator and implemented GPU time-slicing to improve GPU utilization and enable efficient multi-workload sharing.</p>
-          <div class="chips"><b>NVIDIA GPU Operator</b><b>GPU</b><b>K8s</b></div>
-        </article>
-        <article class="project reveal">
-          <div class="project-num">06</div><div class="project-tag">AWS · GOVERNANCE</div>
-          <h3>AWS Landing Zone Automation</h3>
-          <p>Designed secure AWS Landing Zone environments with Control Tower and Account Factory, standardizing guardrails, networking, IAM and account provisioning.</p>
-          <div class="chips"><b>AWS</b><b>Control Tower</b><b>IAM</b><b>Lambda</b></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-head reveal"><span>04</span><h2>Experience</h2></div>
-      <div class="timeline">
-        <div class="timeline-item reveal">
-          <div class="time">DEC 2025 — PRESENT</div>
-          <div class="line"></div>
-          <div class="role"><h3>Senior DevOps Engineer</h3><p class="company">FORVIA HELLA</p>
-            <ul>
-              <li>Rancher, Kubernetes, RKE2 and enterprise application operations.</li>
-              <li>ArgoCD, Helm, Harbor/Nexus and secure container delivery.</li>
-              <li>AKS automation through Terraform and Azure DevOps.</li>
-              <li>Observability and security with Prometheus, Grafana, Jaeger, Falco and NeuVector.</li>
-              <li>Kagent, Azure OpenAI and GPU Operator initiatives.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item reveal">
-          <div class="time">FEB 2022 — OCT 2025</div>
-          <div class="line"></div>
-          <div class="role"><h3>Cloud Engineer</h3><p class="company">HCL TECHNOLOGIES</p>
-            <ul>
-              <li>Multi-cloud infrastructure troubleshooting across AWS and Azure.</li>
-              <li>AWS Landing Zone with Control Tower and Account Factory.</li>
-              <li>Docker and CI/CD automation for microservices.</li>
-              <li>Terraform, Ansible, GitHub Actions and infrastructure automation.</li>
-              <li>Automation delivered $160K+ annual savings through cleanup and optimization.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section metrics">
-      <div class="section-head reveal"><span>05</span><h2>Impact in numbers</h2></div>
-      <div class="metric-grid">
-        <div class="metric reveal"><strong data-count="20">0</strong><span>%</span><p>project completion time reduction</p></div>
-        <div class="metric reveal"><strong data-count="60">0</strong><span>%</span><p>manual onboarding reduction</p></div>
-        <div class="metric reveal"><strong data-count="45">0</strong><span>%</span><p>deployment time reduction</p></div>
-        <div class="metric reveal"><strong data-count="160">0</strong><span>K+</span><p>annual savings through automation</p></div>
-      </div>
-    </section>
-
-    <section class="section certs">
-      <div class="section-head reveal"><span>06</span><h2>Certifications</h2></div>
-      <div class="cert-grid">
-        <div class="cert reveal"><span>AWS</span><h3>Solutions Architect — Associate</h3></div>
-        <div class="cert reveal"><span>AWS</span><h3>SysOps Administrator — Associate</h3></div>
-        <div class="cert reveal"><span>AWS</span><h3>Cloud Practitioner</h3></div>
-        <div class="cert reveal"><span>GCP</span><h3>Associate Cloud Engineer</h3></div>
-        <div class="cert reveal"><span>AZURE</span><h3>Azure Fundamentals — AZ-900</h3></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="contact-box reveal">
-        <div>
-          <div class="eyebrow"><i></i> OPEN TO CONNECTIONS</div>
-          <h2>Let's build something<br /><span>reliable.</span></h2>
-          <p>Interested in cloud platforms, Kubernetes, DevOps automation or platform engineering?</p>
-        </div>
-        <div class="contact-actions">
-          <a class="btn primary" href="mailto:mr.hemantksharma@gmail.com">Email me ↗</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/mr-hemantsharma/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
-      </div>
-      <footer><span>© 2026 Hemant Sharma</span><span>Cloud · Kubernetes · Automation</span></footer>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<body><div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar"><a class="logo" href="#home"><span>HS</span><b>HEMANT SHARMA</b></a>
+<nav class="nav" aria-label="Primary navigation"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#work">Selected work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+<a class="mini-cta" href="Hemant-Sharma-Resume.pdf" download>Resume ↗</a><button class="menu" aria-label="Open menu">☰</button></header>
+<main id="home">
+<section class="hero wrap"><div class="hero-copy reveal"><div class="status"><i></i> SENIOR DEVOPS ENGINEER · PLATFORM ENGINEERING</div>
+<p class="hero-kicker">Cloud infrastructure · Kubernetes · Automation · Reliability</p><h1>Hemant<br><span>Sharma.</span></h1>
+<p class="hero-lead">I build and operate reliable cloud platforms — from Kubernetes clusters and GitOps delivery to infrastructure automation, observability and security.</p>
+<div class="hero-buttons"><a class="btn solid" href="#work">Explore my work <span>↓</span></a><a class="btn outline" href="Hemant-Sharma-Resume.pdf" download>Download CV <span>↗</span></a></div>
+<div class="hero-facts"><div><strong>4.5+</strong><small>Years in DevOps & Cloud</small></div><div><strong>AWS · Azure · GCP</strong><small>Multi-cloud experience</small></div><div><strong>K8s · IaC · GitOps</strong><small>Platform engineering focus</small></div></div></div>
+<div class="hero-photo reveal"><div class="photo-frame"><img src="hemant-sharma-professional.jpg" alt="Professional portrait of Hemant Sharma"><div class="photo-label"><span>HEMANT SHARMA</span><small>Senior DevOps Engineer</small></div></div>
+<div class="floating-card card-top"><small>FOCUS</small><b>Platform Reliability</b><span>Cloud → Cluster → Delivery</span></div><div class="floating-card card-bottom"><small>BUILDING WITH</small><b>Terraform · Kubernetes</b><span>Argo CD · Helm · Observability</span></div></div></section>
+<section id="about" class="section wrap"><div class="section-label"><span>01</span><b>ABOUT</b></div><div class="about-grid">
+<div class="about-title reveal"><p>Infrastructure should feel like a <em>product</em>, not a collection of servers.</p></div>
+<div class="about-copy reveal"><p>I'm a Senior DevOps Engineer working across cloud, Kubernetes and enterprise platform operations. My work sits at the intersection of infrastructure, automation and reliability — turning complex environments into repeatable, supportable systems.</p><p>At FORVIA HELLA, I work with Rancher/RKE2 and AKS platforms, GitOps delivery, container registries, observability, security tooling and emerging Kubernetes AI workloads. Earlier at HCL Technologies, I worked on AWS/Azure environments, Landing Zones, infrastructure automation and CI/CD.</p><div class="quote">“Automate the repeatable. Observe the important. Standardize what scales.”</div></div></div>
+<div class="pillars"><article class="pillar reveal"><span>01</span><h3>Platform Engineering</h3><p>Cluster lifecycle, access, workloads, storage, networking and production operations across enterprise Kubernetes.</p></article>
+<article class="pillar reveal"><span>02</span><h3>Infrastructure Automation</h3><p>Terraform, Ansible, CI/CD and scripting to make provisioning and operational work predictable.</p></article>
+<article class="pillar reveal"><span>03</span><h3>Reliability & Security</h3><p>Observability, runtime security, troubleshooting and operational guardrails for production platforms.</p></article></div></section>
+<section id="capabilities" class="section section-dark wrap-full"><div class="wrap"><div class="section-label"><span>02</span><b>CAPABILITIES & STACK</b></div><div class="cap-head reveal"><h2>The toolbox behind the platform.</h2><p>Technologies I use to design, automate, deploy, observe and secure infrastructure.</p></div>
+<div class="stack-grid">
+<article class="stack reveal"><span>CLOUD</span><h3>AWS</h3><p>Control Tower · Landing Zone · IAM · Lambda · CloudWatch</p></article><article class="stack reveal"><span>CLOUD</span><h3>AZURE</h3><p>AKS · Azure DevOps · Azure OpenAI · enterprise automation</p></article><article class="stack reveal"><span>CLOUD</span><h3>GCP</h3><p>Cloud infrastructure and multi-cloud operations</p></article><article class="stack reveal"><span>PLATFORM</span><h3>Kubernetes</h3><p>RKE2 · AKS · Rancher · RBAC · workloads · storage · networking</p></article>
+<article class="stack reveal"><span>DELIVERY</span><h3>Argo CD + Helm</h3><p>GitOps · Helm charts · release workflows · Kubernetes application delivery</p></article><article class="stack reveal"><span>IaC</span><h3>Terraform + Ansible</h3><p>Reusable infrastructure · configuration management · standardization</p></article><article class="stack reveal"><span>CI/CD</span><h3>GitHub Actions + Jenkins</h3><p>Build automation · deployment pipelines · operational workflows</p></article><article class="stack reveal"><span>CONTAINERS</span><h3>Docker · Harbor · Nexus</h3><p>Image lifecycle · private registries · artifact management</p></article>
+<article class="stack reveal"><span>OBSERVABILITY</span><h3>Prometheus + Grafana</h3><p>Metrics · dashboards · alerting · platform visibility</p></article><article class="stack reveal"><span>TRACING</span><h3>Jaeger + Audit Logs</h3><p>Distributed tracing · Kubernetes activity and audit visibility</p></article><article class="stack reveal"><span>SECURITY</span><h3>NeuVector + Falco</h3><p>Container security · runtime detection · workload protection</p></article><article class="stack reveal"><span>ENGINEERING</span><h3>Linux · Bash · Python</h3><p>Automation scripts · troubleshooting · operational tooling</p></article></div></div></section>
+<section id="work" class="section wrap"><div class="section-label"><span>03</span><b>SELECTED WORK</b></div><div class="cap-head reveal"><h2>Problems solved, not just tools listed.</h2><p>A closer look at the platform work behind my experience.</p></div><div class="case-list">
+<article class="case reveal"><div class="case-index">01</div><div><div class="case-meta">KUBERNETES · RANCHER · RKE2</div><h3>Enterprise Kubernetes Platform Operations</h3><p>Operate multi-cluster Rancher/RKE2 environments with a focus on lifecycle management, RBAC, node health, workloads, storage, networking and production incident response.</p><div class="case-grid"><div><small>OWNERSHIP</small><b>Cluster operations</b></div><div><small>FOCUS</small><b>Availability & access</b></div><div><small>TOOLING</small><b>Rancher · K8s · RKE2</b></div></div></div></article>
+<article class="case reveal"><div class="case-index">02</div><div><div class="case-meta">AZURE · TERRAFORM · DEVOPS</div><h3>Repeatable AKS Platform Automation</h3><p>Build standardized AKS infrastructure through Terraform and Azure DevOps pipelines, reducing manual platform work and creating a consistent deployment path.</p><div class="case-grid"><div><small>APPROACH</small><b>Infrastructure as Code</b></div><div><small>DELIVERY</small><b>CI/CD automation</b></div><div><small>RESULT</small><b>Standardized provisioning</b></div></div></div></article>
+<article class="case reveal"><div class="case-index">03</div><div><div class="case-meta">OBSERVABILITY · SECURITY</div><h3>Visibility & Protection for Kubernetes</h3><p>Bring metrics, dashboards, traces, audit activity and runtime security together using Prometheus, Grafana, Jaeger, Kubernetes Audit Logs, NeuVector and Falco.</p><div class="case-grid"><div><small>OBSERVE</small><b>Metrics + traces</b></div><div><small>SECURE</small><b>Runtime detection</b></div><div><small>OPERATE</small><b>Faster troubleshooting</b></div></div></div></article>
+<article class="case reveal"><div class="case-index">04</div><div><div class="case-meta">AI · GPU · KUBERNETES</div><h3>Emerging AI Workloads on Kubernetes</h3><p>Work with Kagent and Azure OpenAI integrations and explore efficient GPU utilization with NVIDIA GPU Operator and GPU time-slicing for shared workloads.</p><div class="case-grid"><div><small>AI PLATFORM</small><b>Kagent · Azure OpenAI</b></div><div><small>GPU</small><b>NVIDIA Operator</b></div><div><small>GOAL</small><b>Efficient shared compute</b></div></div></div></article>
+<article class="case reveal"><div class="case-index">05</div><div><div class="case-meta">AWS · GOVERNANCE · AUTOMATION</div><h3>AWS Landing Zone & Account Automation</h3><p>Work with AWS Control Tower and Account Factory to standardize cloud foundations, while Lambda and scripting automate operational cleanup and reduce unnecessary spend.</p><div class="case-grid"><div><small>FOUNDATION</small><b>Control Tower</b></div><div><small>AUTOMATION</small><b>Lambda · Shell</b></div><div><small>IMPACT</small><b>$160K+ annual savings</b></div></div></div></article></div></section>
+<section id="experience" class="section section-dark wrap-full"><div class="wrap"><div class="section-label"><span>04</span><b>EXPERIENCE</b></div><div class="experience-intro reveal"><h2>From cloud engineering to platform engineering.</h2><p>The common thread: make infrastructure easier to operate, safer to change and easier to scale.</p></div><div class="timeline">
+<article class="job reveal"><div class="job-date">DEC 2025<br><span>— PRESENT</span></div><div class="job-line"></div><div><div class="job-company">FORVIA HELLA</div><h3>Senior DevOps Engineer</h3><p class="job-summary">Enterprise Kubernetes, cloud platform operations and DevOps automation.</p><ul><li>Rancher and RKE2 multi-cluster lifecycle, access and production operations.</li><li>AKS automation using Terraform and Azure DevOps pipelines.</li><li>GitOps and application delivery with Argo CD, Helm, Harbor and Nexus.</li><li>Observability and security with Prometheus, Grafana, Jaeger, Audit Logs, NeuVector and Falco.</li><li>Kagent/Azure OpenAI and NVIDIA GPU Operator initiatives for Kubernetes workloads.</li></ul><div class="job-tags"><b>Rancher</b><b>RKE2</b><b>AKS</b><b>Argo CD</b><b>Helm</b></div></div></article>
+<article class="job reveal"><div class="job-date">FEB 2022<br><span>— OCT 2025</span></div><div class="job-line"></div><div><div class="job-company">HCL TECHNOLOGIES</div><h3>Cloud Engineer</h3><p class="job-summary">AWS/Azure infrastructure, cloud adoption and automation.</p><ul><li>AWS Landing Zone and Control Tower / Account Factory implementation.</li><li>Cloud troubleshooting across AWS and Azure with Terraform and Ansible automation.</li><li>Docker and CI/CD automation that reduced deployment effort.</li><li>Lambda and shell automation for cleanup and optimization, contributing to $160K+ annual savings.</li><li>Operational improvements including reduced onboarding and project execution time.</li></ul><div class="job-tags"><b>AWS</b><b>Azure</b><b>Terraform</b><b>Ansible</b><b>GitHub Actions</b></div></div></article></div></div></section>
+<section class="section wrap"><div class="section-label"><span>05</span><b>IMPACT & CREDENTIALS</b></div><div class="impact-grid"><div class="impact reveal"><strong>20%</strong><span>project completion time reduction</span></div><div class="impact reveal"><strong>60%</strong><span>manual onboarding reduction</span></div><div class="impact reveal"><strong>45%</strong><span>deployment time reduction</span></div><div class="impact reveal"><strong>$160K+</strong><span>annual savings through automation</span></div></div>
+<div class="certs"><div class="cert reveal"><span>AWS</span><b>Solutions Architect — Associate</b></div><div class="cert reveal"><span>AWS</span><b>SysOps Administrator — Associate</b></div><div class="cert reveal"><span>AWS</span><b>Cloud Practitioner</b></div><div class="cert reveal"><span>GCP</span><b>Associate Cloud Engineer</b></div><div class="cert reveal"><span>AZURE</span><b>Azure Fundamentals — AZ-900</b></div></div></section>
+<section id="contact" class="contact wrap reveal"><div class="contact-photo"><img src="hemant-sharma-professional.jpg" alt="Hemant Sharma"></div><div><div class="status"><i></i> LET'S CONNECT</div><h2>Build better platforms.<br><span>Operate them with confidence.</span></h2><p>Open to conversations around DevOps, Kubernetes, cloud platforms, automation and platform engineering.</p><div class="contact-buttons"><a class="btn solid" href="mailto:mr.hemantksharma@gmail.com">Email me ↗</a><a class="btn outline" href="https://www.linkedin.com/in/mr-hemantsharma/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn outline" href="https://github.com/hemantssharma" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+</main><footer class="footer wrap"><span>© 2026 Hemant Sharma</span><span>Senior DevOps Engineer · Cloud · Kubernetes · Automation</span></footer><script src="script.js"></script></body></html>
